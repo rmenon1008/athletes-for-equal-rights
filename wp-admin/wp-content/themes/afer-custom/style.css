@@ -1,0 +1,39 @@
+/*
+Theme Name: Athletes For Equal Rights Theme
+Author: Rohan Menon
+*/
+
+@font-face {
+    font-family: 'Big Noodle Titling';
+    src: url('fonts/big_noodle_titling.ttf') format('truetype');
+}
+
+body {
+    background-color: white;
+    font-family: 'Big Noodle Titling';
+}
+
+header {
+    background: black;
+    width:100%;
+    height: 60px;
+}
+
+.navigation a{
+    float:right;
+    color:white;
+    padding-right:10px;
+    font-size: 27px;
+    
+}
+
+.navigation{
+    padding-top:10px;
+	margin:0;
+    list-style-type:none;
+    direction: rtl;
+}
+
+.navigation li{
+    direction: rtl;
+}

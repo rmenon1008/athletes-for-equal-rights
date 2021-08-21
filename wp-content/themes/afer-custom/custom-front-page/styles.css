@@ -1,0 +1,422 @@
+#post-39 {
+    display: none;
+}
+
+.scroll-indicator {
+    position: absolute;
+    height:85px;
+    width:300px;
+    left:calc(50vw - (300px/2));
+    bottom:0;
+    font-size:22px;
+    background-image:url("/wp-content/custom-front-page/bounce-arrow.gif");
+    background-position: 75px -5px;
+    background-repeat: no-repeat;
+    background-size: 140px 110px;
+}
+
+.footer-nav-widgets-wrapper {
+    margin-top: 0 !important;
+}
+
+#story-contain *, *::before, *::after {
+    box-sizing: content-box;
+    -webkit-font-smoothing: antialiased;
+    word-break: break-word;
+    word-wrap: break-word;
+}
+
+body {
+    margin:0;
+    padding:0;
+}
+
+#story-contain {
+    margin:0;
+    overflow-x:hidden;
+    background-color: rgb(8, 8, 8);
+    background-blend-mode: luminosity;
+    background-size: 100vw;
+    background-image: url('/wp-content/custom-front-page/background.svg');
+}
+
+#story-contain::after {
+    height:0;
+}
+
+#story-contain::before {
+    height:0;
+}
+
+
+.full {
+    width:100%;
+    height:100%;
+    padding: 0;
+    font-family: "PT Serif";
+    overflow: visible;
+    overflow-x:clip;
+}
+
+.content {
+    width:80vw;
+    height:100vh;
+    margin:auto;
+    position: relative;
+    color:white;
+}
+
+.spacer .content {
+    height:100%;
+}
+
+.cls-1{
+    stroke-dasharray: 0px 10000px;
+    stroke-dashoffset: 0px;
+    stroke: white;
+    fill:none;
+    stroke-width:.4vh;
+}
+
+.outline-stroke{
+    /*stroke-dasharray: 10px 10000px;
+    stroke-dashoffset: 0px;*/
+    stroke: #f6eb14;
+    fill:none;
+    stroke-width:.3vh;
+
+    stroke-dasharray: 0px 10000px;
+    transition: 3s;
+    
+}
+
+#page-selector .outline-stroke{
+    transition:10s;
+}
+
+
+.line-bg {
+    width:100%;
+    height:100%;
+    z-index:0;
+}
+
+.spacer{
+    height:400px;
+    width:100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.date {
+    position:absolute;
+    height:32vh;
+    padding: 0 1vw;
+    margin: -16vh -8vw;
+    background-color: rgb(8, 8, 8);
+    z-index:1;
+    font-size: 30vh;
+    font-family: "Big Noodle";
+    text-align: center;
+    letter-spacing: -.03em;
+    color:transparent;
+    transition: 0.5s;
+    border-radius: 2vw;
+}
+
+.text {
+    position:absolute;
+    z-index: 2;
+    font-size:3vh;
+}
+
+.slide-left {
+    animation-fill-mode: forwards;
+    opacity: 0;
+    margin-left:-70px;
+    margin-right: 70px;
+    transition: 0.5s ;
+
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translateZ(0); 
+}
+
+.slide-right {
+    opacity: 0;
+    margin-left:-70px;
+    margin-right: 70px;
+    transition: 0.5s ;
+
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translateZ(0); 
+}
+
+.quote {
+    font-size:2.2vh;
+}
+
+.image-contain {
+    position: absolute;
+}
+
+.image-text {
+    position: absolute;
+    width:45vw;
+}
+
+.image-text date1 {
+    display:block;
+    font-family: "Big Noodle";
+    font-size: 5vh;
+}
+
+.itr .image2 .it-rect {
+    top:-1vw;
+    left:1vw;
+}
+
+.it-rect {
+    width:100%;
+    height:100%;
+    position: absolute;
+    top:-1vw;
+    left:-1vw;
+    border: #f6eb14 solid 0.3vh;
+    z-index: -1;
+}
+
+.image-text .image2{
+    position: relative;
+    background-size: cover;
+    width:10vw;
+    height:10vw;
+    float: left;
+}
+
+.image-text p1{
+    margin: 0 11vw;
+    display:block;
+    font-size:3vh;
+}
+
+.itr .image2 {
+    float:right;
+}
+
+.itr p1 {
+    text-align:right;
+}
+
+
+.image{
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 2;
+    width:100%;
+    height:100%;
+}
+
+.outlines {
+    width:100%;
+    height:100%;
+    position: absolute;
+    z-index:0;
+}
+
+#page-selector .outlines {
+    position: static;
+}
+
+.big-quote {
+    font-size: 4.5vh;
+}
+
+.heading-emphasis {
+    width:0%;
+    margin: 0 20%;
+    border-bottom:#f6eb14 solid 0.25vw;
+    transition-delay: 0.25s;
+    transition-duration: 0.5s;
+}
+
+#page-selector {
+    display:flex;
+    flex-direction: row;
+}
+
+#story-contain #page-selector .section {
+    flex-basis:25%;
+    height:auto;
+    margin:auto;
+    text-align:center;
+    background-color:#222;
+    padding: 7vh 2vh 2vh 2vh;
+    border-radius: 3vh;
+    transition:0.25s;
+    color:white;
+    text-decoration:none;
+}
+
+#story-contain #page-selector .section:hover {
+    background-color:rgb(26, 26, 26);
+}
+
+#page-selector svg {
+    height:20vh;
+}
+
+#page-selector t {
+    font-family: "Big Noodle";
+    font-size:7vh;
+    text-align: center;
+}
+
+#page-selector p {
+    font-size:2.5vh;
+    text-align: center;
+}
+/*
+.spacer {
+    border: solid white 1px;
+}*/
+
+@media (max-aspect-ratio: 3/2) {
+
+    #header-image {
+	background-attachment: scroll !important;
+    }
+
+    #story-contain {
+        overflow:hidden;
+    }
+
+    .image-contain {
+        width: 60vw !important;
+        height: 40vh !important;
+    }
+
+    .full .content{
+        height: auto !important;
+    }
+
+    .text, .image-contain, .date, .image {
+        width: 80vw !important;
+        position: static;
+    }
+
+    .text {
+        font-size: 22px;
+        padding-top: 20px;
+    }
+
+    .date {
+        margin-bottom: -15vh;
+        background-color: transparent;
+        font-size:26vh;
+        padding:0;
+	white-space: nowrap;
+    }
+
+    .spacer {
+        height: 50vh;
+    }
+
+    .big-quote {
+        font-size: 30px;
+    }
+
+    .no-mobile, .line-bg {
+        display: none;
+        height:0 !important;
+    }
+
+    .image-contain .outlines {
+        display: none;
+    }
+
+    .image-text {
+        position: static;
+        height: 30vh;
+        width:100%;
+        margin-bottom:5vh;
+        margin-left:0!important;
+    }
+
+    .image-text p1{
+        margin:1vh 0;
+        text-align: center !important;
+    }
+
+    .image-text .image2{
+        position: static;
+        height: 20vh;
+        width:20vh;
+        float:none;
+        margin:auto;
+    }
+
+    #present{
+        width:100vw !important;
+        text-align:center;
+        padding:0 !important;
+        margin-left:-10vw;
+        margin-bottom:5vh !important;
+    }
+
+    #our-mission {
+        width:100vw !important;
+        text-align:center;
+        padding:0 !important;
+        margin-left:-10vw;
+        margin-bottom:3vh !important;
+        margin-top:30vh;
+        font-size: 80px !important;
+    }
+
+    .it-rect {
+        display:none;
+    }
+
+    .title {
+        font-size: 10vw !important;
+    }
+    .athlete {
+        font-size: 15vw !important;
+    }
+
+    #header-image {
+        background-position: center;
+    }
+
+    #pg-10 .content{
+        overflow:visible !important;
+    }
+
+    .section .outlines {
+        display:block;
+    }
+
+    #story-contain #page-selector {
+        display:block;
+    }
+
+    #story-contain #page-selector .section {
+        display:block;
+        width:100%;
+        padding:6vh 0px;
+        margin-bottom:6vh;
+        margin-top:6vh;
+    }
+
+    #page-selector .outline-stroke{
+        transition:4s;
+    }
+
+
+}
